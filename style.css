@@ -1,0 +1,28 @@
+/* CSS for Temperature Converter */
+body {
+    font-family: Arial;
+    text-align: center;
+    margin-top: 50px;
+}
+/* Style for the container that holds the form and result */
+.container {
+    width: 350px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+/* Style for the input, options, and button */
+input, select, button {
+    width: 90%;
+    padding: 10px;
+    margin: 8px;
+}
+/* Style for the button */
+button {
+    cursor: pointer;
+}
+/* Style for the result display */
+.result {
+    margin-top: 20px;
+}

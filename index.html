@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Temperature Converter</title>
+    <!-- connect the css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- main container -->
+    <div class="container">
+
+        <h2>Temperature Converter in JS</h2>
+
+        <!-- select what temperature to convert -->
+        <label>Choose Temperature:</label>
+
+        <select id="choice">
+            <option value="1">Celsius (°C)</option>
+            <option value="2">Fahrenheit (°F)</option>
+            <option value="3">Kelvin (K)</option>
+        </select>
+
+        <!-- input the temperature to convert -->
+        <input 
+            type="number"
+            id="temperature" 
+            placeholder="Enter temperature"
+            step="any"
+        >
+
+        <!-- button to convert the temperature -->
+        <button onclick="convertTemperature()">Convert</button>
+
+        <!-- display the result -->
+        <div class="result" id="result"></div>
+
+    </div>
+    
+    <!-- connect the js file -->
+    <script src="TempConv.js"></script>
+
+</body>
+</html>
