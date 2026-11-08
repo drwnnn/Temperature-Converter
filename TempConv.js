@@ -17,8 +17,13 @@ function convertTemperature() {
         const fahrenheit = (temperature * 9 / 5) + 32;
         const kelvin = temperature + 273.15;
 
-        result = "Fahrenheit: " + fahrenheit.toFixed(2)+ " °F" +
-                 "<br>Kelvin: " + kelvin.toFixed(2)+ " K";
+        if (temperature > 100) {
+            result = '<span style="color: red;">Fahrenheit: ' + fahrenheit.toFixed(2)+ " °F" +
+                     "<br>Kelvin: " + kelvin.toFixed(2)+ " K";
+        } else {
+            result = "Fahrenheit: " + fahrenheit.toFixed(2)+ " °F" +
+                     "<br>Kelvin: " + kelvin.toFixed(2)+ " K";
+        }
 
     // converts fahrenheit to celsius & kelvin
     } else if (choice === "2") {
@@ -26,9 +31,13 @@ function convertTemperature() {
         const celsius = (temperature - 32) * 5 / 9;
         const kelvin = celsius + 273.15;
 
+        if (temperature > 212){
+        result = '<span style="color: red;">Celsius: ' + celsius.toFixed(2)+ " °C" +
+                 "<br>Kelvin: " + kelvin.toFixed(2)+ " K";
+        } else {
         result = "Celsius: " + celsius.toFixed(2)+ " °C" +
                  "<br>Kelvin: " + kelvin.toFixed(2)+ " K";
-
+        }
     // converts kelvin to celsius & fahrenheit
     } else if (choice === "3") {
 
